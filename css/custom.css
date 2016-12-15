@@ -13,8 +13,12 @@ body {
   color: #000;
 }
 
-.container-fluid {
-  max-width: 1300px;
+a { 
+  color: #054bb3;
+}
+
+a:hover {
+  color: #0085ff;
 }
 
 h1 {
@@ -31,17 +35,48 @@ h2 {
   margin-bottom: 20px;
 }
 
+.container-fluid {
+  max-width: 1300px;
+}
+
 .submit-buttons {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-a { 
+.form-control {
+  font-weight: normal;
+  font-size: .8125rem;
+}
+
+.form-inline .form-control {
+  width: 100%;
+}
+
+.btn-primary, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #054bb3;
+  border-color: #054bb3;
+}
+
+.pagination>li>a, .pagination>li>span {
   color: #054bb3;
 }
 
-a:hover {
-  color: #0085ff;
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 0px 15px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.close {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .table>thead>tr>th {
@@ -86,7 +121,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
   background-color: rgba(225,225,255,0.8);
 }
 
-
 .date {
   font-size: .75rem;
 }
@@ -99,31 +133,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
   font-style: normal !important;
 }
 
-.form-control {
-  font-weight: normal;
-  font-size: .8125rem;
-}
-
-.form-inline .form-control {
-  width: 100%;
-}
-
-.btn-primary, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-  background-color: #054bb3;
-  border-color: #054bb3;
-}
-
-.pagination>li>a, .pagination>li>span {
-  color: #054bb3;
-}
-.modal-header {
-  border-bottom: none;
-}
-
-.modal-footer {
-  border-top: none;
-}
-
 @media screen and (max-width: 767px) {
   div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
     text-align: left;
@@ -131,5 +140,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
   }  
   .submit-buttons {
     text-align: left;
+    margin-top: 0;
   }
 }
