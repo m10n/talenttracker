@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/fonts/glyphicons-halflings-regular.eot');
+  src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+html {
+  font-size: 16px;
+}
+
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Oxygen, Avenir, 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.container-fluid {
+  max-width: 1300px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.submit-buttons {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+a { 
+  color: #054bb3;
+}
+
+a:hover {
+  color: #0085ff;
+}
+
+.table>thead>tr>th {
+ font-size: 1rem;
+ border-bottom: 1px solid #ddd;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {
+  padding-left: 3rem;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+  left: 1rem !important;
+  /*top: auto;*/
+  /*border: none;*/
+  /*vertical-align: middle;*/
+  box-shadow: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  font-family: inherit;
+  line-height: 18px;
+  background-color: #054bb3;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th/*, .table>tfoot>tr>td, .table>tfoot>tr>th*/ {
+  padding: .25rem .5rem;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th {
+  border-top: 1px solid #eee;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(225,225,255,0.8);
+}
+
+.table>tfoot>tr>td, .table>tfoot>tr>th {
+  color: #aaa;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(225,225,255,0.8);
+}
+
+
+.date {
+  font-size: .75rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.source {
+  font-style: normal !important;
+}
+
+.form-control {
+  font-weight: normal;
+  font-size: .8125rem;
+}
+
+.form-inline .form-control {
+  width: 100%;
+}
+
+.btn-primary, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #054bb3;
+  border-color: #054bb3;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: #054bb3;
+}
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+@media screen and (max-width: 767px) {
+  div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
+    text-align: left;
+    /*margin-left: 15px;*/
+  }  
+  .submit-buttons {
+    text-align: left;
+  }
+}
