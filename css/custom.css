@@ -4,27 +4,22 @@
   src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-html {
-  font-size: 16px;
-}
+html {font-size: 16px;}
 
 body { 
   font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Oxygen, Avenir, 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #000;
+  font-size: .8125rem; 
 }
 
-a { 
-  color: #054bb3;
-}
-
-a:hover {
-  color: #0085ff;
-}
+a {color: #0035af;}
+a:hover {color: #0085ff;}
 
 h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 1.85rem;
   margin-bottom: 5px;
+  font-family: 'Concert One', -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Oxygen, Avenir, 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -32,12 +27,10 @@ h2 {
   font-weight: 400;
   color: #555;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.container-fluid {
-  max-width: 1300px;
-}
+.container-fluid {max-width: 1300px;}
 
 .submit-buttons {
   margin-top: 30px;
@@ -49,30 +42,30 @@ h2 {
   font-size: .8125rem;
 }
 
-.form-inline .form-control {
-  width: 100%;
-}
+.form-inline .form-control {width: 100%;}
 
 .btn-primary, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
   background-color: #054bb3;
   border-color: #054bb3;
 }
 
-.pagination>li>a, .pagination>li>span {
-  color: #054bb3;
+.pagination>li>a, .pagination>li>span {color: #054bb3;}
+
+.btn-default {
+  color: #fff;
+  background-color: #1d2b72;
+  border-color: #1d1d6d;
 }
 
-.modal-header {
-  border-bottom: none;
+.btn-default:hover {
+  color: #fff;
+  background-color: #334499;
+  border-color: #334499;
 }
 
-.modal-body {
-  padding: 0px 15px;
-}
-
-.modal-footer {
-  border-top: none;
-}
+.modal-header {border-bottom: none;}
+.modal-body {padding: 0px 15px;}
+.modal-footer {border-top: none;}
 
 .close {
   font-size: 2rem;
@@ -84,59 +77,34 @@ h2 {
  border-bottom: 1px solid #ddd;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {
-  padding-left: 3rem;
+table, thead, table.dataTable.fixedHeader-floating, table.dataTable.fixedHeader-locked {background-color: #f9f8f4;}
+
+table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {opacity: 1;}
+
+table {
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 1px solid #f3f3f3;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
-  left: 1rem !important;
-  /*top: auto;*/
-  /*border: none;*/
-  /*vertical-align: middle;*/
-  box-shadow: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  font-family: inherit;
-  line-height: 18px;
-  background-color: #054bb3;
-}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {padding-left: 2rem;}
 
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {background-color: #054bb3;}
 .table>tbody>tr>td, .table>tbody>tr>th/*, .table>tfoot>tr>td, .table>tfoot>tr>th*/ {
-  padding: .25rem .5rem;
+  padding: 0 .5rem;
+  vertical-align: middle;
 }
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: rgba(225,225,255,0.8);}
+.table>tfoot>tr>td, .table>tfoot>tr>th {color: #aaa;}
 
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th {
-  border-top: 1px solid #eee;
-}
-
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgba(225,225,255,0.8);
-}
-
-.table>tfoot>tr>td, .table>tfoot>tr>th {
-  color: #aaa;
-}
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgba(225,225,255,0.8);
-}
-
-.date {
-  font-size: .75rem;
-}
-
+.date {font-size: .75rem;}
 .name {
+  font-size: .85rem;
   font-weight: 600;
 }
-
-.source {
-  font-style: normal !important;
-}
-
 @media screen and (max-width: 767px) {
   div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
     text-align: left;
-    /*margin-left: 15px;*/
   }  
   .submit-buttons {
     text-align: left;
