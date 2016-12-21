@@ -10,13 +10,14 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Oxygen, Avenir, 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #000;
   font-size: .8125rem; 
+  background-color: #f9f8f4;
 }
 
 a {color: #0035af;}
 a:hover {color: #0085ff;}
 
 h1 {
-  font-size: 1.85rem;
+  font-size: 1.75rem;
   margin-bottom: 5px;
   font-family: 'Concert One', -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Oxygen, Avenir, 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -29,8 +30,6 @@ h2 {
   margin-top: 0;
   margin-bottom: 15px;
 }
-
-.container-fluid {max-width: 1300px;}
 
 .submit-buttons {
   margin-top: 30px;
@@ -82,14 +81,21 @@ table, thead, table.dataTable.fixedHeader-floating, table.dataTable.fixedHeader-
 table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {opacity: 1;}
 
 table {
-  padding: 0 10px;
   border-radius: 4px;
-  border: 1px solid #f3f3f3;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {padding-left: 2rem;}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {padding-left: 3.5rem;}
 
-table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {background-color: #054bb3;}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+  left: 1rem !important;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  font-family: inherit;
+  line-height: 18px;
+  background-color: #054bb3;
+}
 .table>tbody>tr>td, .table>tbody>tr>th/*, .table>tfoot>tr>td, .table>tfoot>tr>th*/ {
   padding: 0 .5rem;
   vertical-align: middle;
@@ -102,9 +108,12 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
   font-size: .85rem;
   font-weight: 600;
 }
+.notes {padding-right:20px;}
+
 @media screen and (max-width: 767px) {
   div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
     text-align: left;
+    /*margin-left: 15px;*/
   }  
   .submit-buttons {
     text-align: left;
