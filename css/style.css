@@ -23,6 +23,8 @@ body {
   font-size: .8125rem; 
 }
 
+.container-fluid {max-width:1200px;}
+
 a {color: #0035af;}
 a:hover {color: #0085ff;}
 
